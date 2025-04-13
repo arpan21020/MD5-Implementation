@@ -223,10 +223,10 @@ int main() {
     
     string input;
     cout << "Enter a string to hash: ";
-    getline(std::cin, input);
+    getline(cin, input);
     
-    std::string hash = md5.hashing(input);
-    std::cout << "MD5 hash: " << hash << std::endl;
+    string hash = md5.hashing(input);
+    cout << "MD5 hash: " << hash << endl;
     
     return 0;
 }

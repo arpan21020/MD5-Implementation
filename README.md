@@ -6,7 +6,6 @@ This repository contains a C++ implementation of the MD5 (Message Digest Algorit
 - [Overview](#overview)
 - [Algorithm Details](#algorithm-details)
 - [Requirements](#requirements)
-- [Usage](#usage)
 - [Example](#example)
 - [Implementation Details](#implementation-details)
 - [Security Considerations](#security-considerations)
@@ -33,25 +32,6 @@ The MD5 algorithm works as follows:
 - C++ compiler with C++11 support
 - Standard Template Library (STL)
 
-## Usage
-
-To use the MD5 hash implementation in your project:
-
-1. Include the MD5Hash class in your project
-2. Create an instance of the class
-3. Call the `hashing` method with your input string
-
-```cpp
-#include "md5_hash.cpp"
-
-int main() {
-    MD5Hash md5;
-    std::string input = "Hello, World!";
-    std::string hash = md5.hashing(input);
-    std::cout << "MD5 hash: " << hash << std::endl;
-    return 0;
-}
-```
 
 ## Example
 
@@ -80,7 +60,7 @@ The implementation consists of a single class `MD5Hash` with the following compo
 - **Constructor**: Initializes the hash state
 - **hashing**: Public method to compute an MD5 hash from an input string
 
-### Key Algorithms:
+### Key Functions:
 1. **string_to_bytes**: Converts input string to a byte array
 2. **pad_message**: Applies the required padding to meet the algorithm's specifications
 3. **process_block**: Processes each 512-bit block of the message
