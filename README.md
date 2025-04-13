@@ -43,8 +43,8 @@ The provided `main()` function demonstrates basic usage by:
 
 Sample execution:
 ```
-Enter a string to hash: Hello, World!
-MD5 hash: 65a8e27d8879283831b664bd8b7f0ad4
+Enter a string to hash: abc
+MD5 hash: 900150983cd24fb0d6963f7d28e17f72
 ```
 
 ## Implementation Details
