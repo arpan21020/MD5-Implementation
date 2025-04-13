@@ -116,10 +116,10 @@ private:
         }
 
         // Initialzing Values from 4 word buffers
-        uint32_t AA=wordA;
-        uint32_t BB=wordB;
-        uint32_t CC=wordC;
-        uint32_t DD=wordD;
+        uint32_t AA=a;
+        uint32_t BB=b;
+        uint32_t CC=c;
+        uint32_t DD=d;
 
         // Process the block in 4 phases of 16 operations each
         for (int phase = 0; phase < 4; ++phase) {
@@ -221,6 +221,7 @@ public:
 int main() {
     MD5Hash md5;
     
+    // string input="12345678901234567890123456789012345678901234567890123456789012345678901234567890";
     string input;
     cout << "Enter a string to hash: ";
     getline(cin, input);
